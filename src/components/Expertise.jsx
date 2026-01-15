@@ -15,9 +15,11 @@ const Expertise=()=>{
                 <div className=" w-2/3 text-center space-y-4">
                 {/* banner */}
                 
-                <h1 className='text-4xl font-bold'>I love these technologies</h1>
-                <p >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse exercitationem aliquid eos deserunt, ad corrupti repudiandae consequuntur cum?</p>
-                <button className='px-4 py-2 bg-orange-500 rounded-full text-1xl'>Hire me</button>
+                <h1 className='text-4xl font-bold'>I love working with these technologies</h1>
+                <p >  I enjoy building full-stack applications using modern technologies.
+  From backend logic to responsive user interfaces, I focus on writing
+  clean, efficient, and scalable code.</p>
+                <button className='px-4 py-2 bg-orange-500 rounded-full text-1xl hover:bg-blue-100'>Hire me</button>
             </div>
 
          </div> 

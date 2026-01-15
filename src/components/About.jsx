@@ -18,10 +18,12 @@ const About=()=>{
 
                     <div className='space-y-5 w-2/3 justify-center'>
                        <h1 className='text-3xl font-semibold '>Java Developer & Frontend Developer</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis cupiditate assumenda deleniti unde! Sed, omnis?</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates ipsam provident placeat quisquam laboriosam sapiente repudiandae laudantium possimus corrupti! Numquam.</p>
+                    <p>Building reliable backend systems and clean, responsive user interfaces.</p>
+                    <p> I specialize in developing scalable Java-based applications and crafting
+  responsive front-end interfaces. With a strong foundation in both backend
+  and UI development, I aim to build efficient, user-focused web solutions.</p>
 
-                    <button className='bg-orange-500 cursor px-3 py-2 text-1xl rounded-full'>Read More..</button>
+                    <button className='bg-orange-500 cursor px-3 py-2 text-1xl rounded-full hover:bg-blue-100'>Read More..</button>
                     </div>
                     
                 </div>

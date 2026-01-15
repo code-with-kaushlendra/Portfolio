@@ -34,7 +34,9 @@ const Banner=()=>{
                     <h3 className='text-3xl font-semibold'>Hi , I am</h3>
                 <h1 className=' mt-4 text-5xl font-bold'>Kaushlendra Pandey</h1>
                 <h2 className='mt-4 text-2xl'>And I am a <span className="font-bold underline" ref={el}></span></h2>
-                <p className='mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nisi itaque optio expedita possimus culpa asperiores quisquam commodi, quam exercitationem odio saepe dolor rerum temporibus rem est reprehenderit explicabo nobis? Aliquam?</p>
+                <p className='mt-2'> A motivated developer with a strong foundation in Java and modern
+    front-end technologies. I enjoy building responsive web applications
+    and turning ideas into practical, user-friendly solutions.</p>
                 
                 <div className='icon-container space-x-5 flex'>
                     <a className="cursor hover:bg-orange-600 border  mt-2 px-3 py-4 w-14 h-14 rounded-full flex justify-between items-center bg-gray-700" href=""><i class="fa-brands text-3xl fa-facebook"></i></a>
@@ -45,7 +47,7 @@ const Banner=()=>{
                 </div>
 
                 <br/>
-                <a className='px-3 py-2 bg-orange-500 rounded-full shadow-lg text-1xl' href="/contact">Contact Me</a>
+                <a href="mailto:pandeykaushlendra9628@gmail.com" className='px-3 py-2 bg-orange-500 rounded-full shadow-lg text-1xl'>Contact Me</a>
                 </div>
                 
             </div>

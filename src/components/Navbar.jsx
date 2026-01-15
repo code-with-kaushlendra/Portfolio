@@ -8,7 +8,7 @@ const Navbar=()=>{
 const [brandName,setBrandName]=useState("Kaushlendra Pandey");
  const [menuLinks,setMenuLinks]=useState([
     {title:"Home",
-        link:"/home",
+        link:"/",
         id:1,
     },
      {title:"About",
@@ -56,7 +56,7 @@ const [brandName,setBrandName]=useState("Kaushlendra Pandey");
 
                    <div>
                     {/* Hire */}
-                   <button className="px-4 py-2 bg-orange-500 shadow rounded-full text-1xl">Hire me</button>
+                   <button className="px-4 py-2 bg-orange-500 shadow rounded-full text-1xl hover:bg-blue-100">Hire me</button>
                    </div>
 
 
