@@ -12,9 +12,18 @@ function App(){
     <>
     <Header/>
     <Banner/>
-    <About/>
-    <Services/>
-    <Expertise/>
+    <section id="about">
+      <About/>
+    </section>
+    
+    <section id="skills">
+      <Services/>
+    </section>
+    
+    <section id="technologies">
+       <Expertise/>
+    </section>
+    
     <Footer/>
     </>
   )

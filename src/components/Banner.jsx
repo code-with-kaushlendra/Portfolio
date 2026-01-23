@@ -39,10 +39,10 @@ const Banner=()=>{
     and turning ideas into practical, user-friendly solutions.</p>
                 
                 <div className='icon-container space-x-5 flex'>
-                    <a className="cursor hover:bg-orange-600 border  mt-2 px-3 py-4 w-14 h-14 rounded-full flex justify-between items-center bg-gray-700" href=""><i class="fa-brands text-3xl fa-facebook"></i></a>
-                    <a className="cursor hover:bg-orange-600 border  mt-2 px-3 py-4 w-14 h-14 rounded-full flex justify-between items-center bg-gray-700"  href=""><i class="fa-brands text-3xl fa-instagram"></i></a>
-                    <a className="cursor hover:bg-orange-600 border  mt-2 px-3 py-4 w-14 h-14 rounded-full flex justify-between items-center bg-gray-700"  href=""><i class="fa-brands text-3xl fa-youtube"></i></a>
-                    <a className="cursor hover:bg-orange-600 border mt-2 px-3 py-4 w-14 h-14 rounded-full flex justify-between items-center bg-gray-700"  href=""> <i class="fa-brands text-3xl fa-linkedin"></i></a>
+                    <a className="cursor hover:bg-orange-600 border  mt-2 px-3 py-4 w-14 h-14 rounded-full flex justify-between items-center bg-gray-700" href="https://github.com/code-with-kaushlendra"><i class="fa-brands text-3xl fa-github"></i></a>
+                    {/* <a className="cursor hover:bg-orange-600 border  mt-2 px-3 py-4 w-14 h-14 rounded-full flex justify-between items-center bg-gray-700"  href=""><i class="fa-brands text-3xl fa-instagram"></i></a> */}
+                    {/* <a className="cursor hover:bg-orange-600 border  mt-2 px-3 py-4 w-14 h-14 rounded-full flex justify-between items-center bg-gray-700"  href=""><i class="fa-brands text-3xl fa-youtube"></i></a> */}
+                    <a className="cursor hover:bg-orange-600 border mt-2 px-3 py-4 w-14 h-14 rounded-full flex justify-between items-center bg-gray-700"  href="https://linkedin.com/in/kaush-pandey-tech"> <i class="fa-brands text-3xl fa-linkedin"></i></a>
                     
                 </div>
 

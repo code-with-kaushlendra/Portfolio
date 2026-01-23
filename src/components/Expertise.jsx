@@ -19,7 +19,7 @@ const Expertise=()=>{
                 <p >  I enjoy building full-stack applications using modern technologies. 
   From backend logic to responsive user interfaces, I focus on writing
   clean, efficient, and scalable code.</p>
-                <button className='px-4 py-2 bg-orange-500 rounded-full text-1xl hover:bg-blue-100'>Hire me</button>
+                <button href="mailto:pandeykaushlendra9628@gmail.com" className='px-4 py-2 bg-orange-500 rounded-full text-1xl hover:bg-blue-100'>Hire me</button>
             </div>
 
          </div> 
@@ -40,6 +40,18 @@ const Expertise=()=>{
                 <p className="text-1xl px-3 py-2 bg-gray-300 rounded-full w-fit mt-1 cursor-pointer hover:bg-orange-500 ">CSS</p>
                 <p className="text-1xl px-3 py-2 bg-gray-300 rounded-full w-fit mt-1 cursor-pointer hover:bg-orange-500 ">Springboot</p>
                 <p className="text-1xl px-3 py-2 bg-gray-300 rounded-full w-fit mt-1 cursor-pointer hover:bg-orange-500 ">Devops</p>
+                <p className="text-1xl px-3 py-2 bg-gray-300 rounded-full w-fit mt-1 cursor-pointer hover:bg-orange-500 ">Bootstrap</p>
+                <p className="text-1xl px-3 py-2 bg-gray-300 rounded-full w-fit mt-1 cursor-pointer hover:bg-orange-500 ">Tailwind</p>
+                <p className="text-1xl px-3 py-2 bg-gray-300 rounded-full w-fit mt-1 cursor-pointer hover:bg-orange-500 ">Git/Github</p>
+                <p className="text-1xl px-3 py-2 bg-gray-300 rounded-full w-fit mt-1 cursor-pointer hover:bg-orange-500 ">Postman</p>
+                <p className="text-1xl px-3 py-2 bg-gray-300 rounded-full w-fit mt-1 cursor-pointer hover:bg-orange-500 ">Php</p>
+                <p className="text-1xl px-3 py-2 bg-gray-300 rounded-full w-fit mt-1 cursor-pointer hover:bg-orange-500">Figma</p>
+                <p className="text-1xl px-3 py-2 bg-gray-300 rounded-full w-fit mt-1 cursor-pointer hover:bg-orange-500">UI/UX</p>
+                <p className="text-1xl px-3 py-2 bg-gray-300 rounded-full w-fit mt-1 cursor-pointer hover:bg-orange-500">Linux</p>
+                <p className="text-1xl px-3 py-2 bg-gray-300 rounded-full w-fit mt-1 cursor-pointer hover:bg-orange-500">Artificial Intelligence</p>
+                <p className="text-1xl px-3 py-2 bg-gray-300 rounded-full w-fit mt-1 cursor-pointer hover:bg-orange-500">Cloud</p>
+                
+
             </div>
 
          </div>
