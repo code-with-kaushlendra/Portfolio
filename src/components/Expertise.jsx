@@ -1,5 +1,6 @@
 import bannerImage from '../assets/banner.jpg'
 import bannerBackground from '../assets/banner_wallpaper.svg'
+import { Link } from 'react-router-dom'
 
 const Expertise=()=>{
     return(
@@ -19,7 +20,8 @@ const Expertise=()=>{
                 <p >  I enjoy building full-stack applications using modern technologies. 
   From backend logic to responsive user interfaces, I focus on writing
   clean, efficient, and scalable code.</p>
-                <button href="mailto:pandeykaushlendra9628@gmail.com" className='px-4 py-2 bg-orange-500 rounded-full text-1xl hover:bg-blue-100'>Hire me</button>
+            <Link to="/contact"><button className='px-4 py-2 bg-orange-500 rounded-full text-1xl hover:bg-blue-100 cursor-pointer'>Hire me</button></Link>
+                
             </div>
 
          </div> 

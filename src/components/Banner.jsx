@@ -3,6 +3,7 @@ import Typed from "typed.js"
 import bannerImage from '../assets/banner.jpg'
 import bannerBackground from '../assets/banner_wallpaper.svg'
 import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 
 const Banner=()=>{
  
@@ -47,7 +48,8 @@ const Banner=()=>{
                 </div>
 
                 <br/>
-                <a href="mailto:pandeykaushlendra9628@gmail.com" className='px-3 py-2 bg-orange-500 rounded-full shadow-lg text-1xl'>Contact Me</a>
+                <Link to="/contact"><button className='px-3 py-2 bg-orange-500 rounded-full shadow-lg text-1xl cursor-pointer'>Contact Me</button></Link>
+                
                 </div>
                 
             </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 
 const Navbar=()=>{
@@ -60,14 +61,18 @@ const scrollToSection =(id)=>{
                  <a onClick={()=>{scrollToSection("about")}} className="hover:text-orange-600 cursor-pointer">About</a>
                   <a onClick={()=>scrollToSection("skills")} className="hover:text-orange-600 cursor-pointer">Skills</a>
                    <a onClick={()=>{scrollToSection("technologies")}} className="hover:text-orange-600 cursor-pointer">Technologies</a>
-                    <a href="mailto:pandeykaushlendra9628@gmail.com" className="hover:text-orange-600">Contact</a>
+                   
+                    <Link to="/contact" className="hover:text-orange-600">Contact</Link>
+                    
             </div>
 
                    <div>
                     {/* Hire */}
-                    <a href="mailto:pandeykaushlendra9628@gmail.com">
-                   <button className="px-4 py-2 bg-orange-500 shadow rounded-full text-1xl hover:bg-blue-100">Hire me</button>
-                   </a>
+                    <Link to="/contact">
+                    <button className="px-4 py-2 bg-orange-500 shadow rounded-full text-1xl hover:bg-blue-100">Hire me</button>
+                    </Link>
+                   
+                  
                    </div>
 
                    <button className="md:hidden text-3xl" onClick={()=> setIsOpen(!isOpen)}> ☰</button> 

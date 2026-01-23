@@ -6,13 +6,18 @@ import About from './components/About'
 import Services from './components/Services'
 import Expertise from "./components/Expertise";
 import Footer from "./components/Footer"
+import Contact from "./pages/Contact";
 
 function App(){
   return(
     <>
     <Header/>
-    <Banner/>
-    <section id="about">
+ <Routes>
+  <Route path="/" element={
+    <>
+         <Banner/>
+
+         <section id="about">
       <About/>
     </section>
     
@@ -23,7 +28,16 @@ function App(){
     <section id="technologies">
        <Expertise/>
     </section>
-    
+
+   </>
+  }
+/>
+
+ <Route path="/contact" element={<Contact/>} />
+     
+ </Routes>
+
+  
     <Footer/>
     </>
   )
