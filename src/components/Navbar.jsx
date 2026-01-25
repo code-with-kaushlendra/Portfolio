@@ -48,14 +48,7 @@ const[isOpen ,setIsOpen]=useState(false);
     return(
         
         <>
-             {isOpen && (
-  <div className="md:hidden bg-gray-100 px-6 py-4 space-y-4">
-    <Link to="/#about" onClick={() => setIsOpen(false)}>About</Link>
-    <Link to="/#skills" onClick={() => setIsOpen(false)}>Skills</Link>
-    <Link to="/#technologies" onClick={() => setIsOpen(false)}>Technologies</Link>
-    <Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link>
-  </div>
-)}
+
 
         <div className="h-20 border main md:flex justify-between items-center px-16 bg-gray-100">
             
@@ -92,7 +85,26 @@ const[isOpen ,setIsOpen]=useState(false);
                   
                    </div>
 
-                   <button className="md:hidden text-3xl" onClick={()=> setIsOpen(!isOpen)}> ☰</button> 
+                  {/* Mobile Toggle */}
+        <button
+          className="md:hidden text-3xl"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          {isOpen ? "✕" : "☰"}
+        </button>
+
+{isOpen && (
+  <div className="md:hidden absolute top-20 left-0 w-full bg-gray-100 shadow-lg">
+    <div className="flex flex-col space-y-4 px-6 py-6 text-lg">
+      <Link to="/#about" onClick={() => setIsOpen(false)}>About</Link>
+      <Link to="/#skills" onClick={() => setIsOpen(false)}>Skills</Link>
+      <Link to="/#technologies" onClick={() => setIsOpen(false)}>Technologies</Link>
+      <Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link>
+    </div>
+  </div>
+)}
+
+      
         </div>
         
         </>
