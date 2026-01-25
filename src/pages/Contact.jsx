@@ -1,6 +1,32 @@
 import { Link } from "react-router-dom";
+import emailjs from "@emailjs/browser";
+
+import { useRef } from "react";
 
 const Contact = () => {
+ const form=useRef();
+  
+ const sendEmail=(e)=>{
+  e.preventDefault();
+ emailjs.sendForm(
+      "service_hg5i8v7",
+      "template_mqe35ts",
+      form.current,
+      "Jpgd3-fZ_FPlXWk-V"
+    )
+    .then(() => {
+      alert("Message sent successfully ✅");
+      form.current.reset();
+    })
+    .catch((error) => {
+      console.log(error.text)
+      alert("Failed to send message ❌");
+    });
+  };
+
+
+
+
   return (
     <section className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 px-6 py-20 flex items-center justify-center">
       <div className="max-w-5xl w-full grid md:grid-cols-2 gap-12 bg-white rounded-2xl shadow-xl p-8 md:p-12">
@@ -52,13 +78,13 @@ const Contact = () => {
         </div>
 
         {/* RIGHT SIDE – FORM */}
-        <form className="space-y-5">
+        <form className="space-y-5" ref={form} onSubmit={sendEmail}>
           <div>
             <label className="block text-sm font-medium text-gray-600 mb-1">
               Your Name
             </label>
             <input
-              type="text"
+              type="text" name="name"
               placeholder="Enter your name"
               className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400"
             />
@@ -70,6 +96,7 @@ const Contact = () => {
             </label>
             <input
               type="email"
+              name="email"
               placeholder="Enter your email"
               className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400"
             />
@@ -81,13 +108,14 @@ const Contact = () => {
             </label>
             <textarea
               rows="4"
+              name="message"
               placeholder="Write your message..."
               className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400"
             ></textarea>
           </div>
 
           <button
-            type="submit"
+            type="submit" 
             className="w-full bg-orange-500 text-white py-3 rounded-lg font-semibold hover:bg-orange-600 transition"
           >
             Send Message 
