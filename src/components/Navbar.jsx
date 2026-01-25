@@ -7,6 +7,7 @@ const Navbar=()=>{
 
     
 const [brandName,setBrandName]=useState("Kaushlendra Pandey");
+const[isOpen ,setIsOpen]=useState(false);
  const [menuLinks,setMenuLinks]=useState([
     {title:"Home",
         link:"/",
@@ -41,8 +42,21 @@ const [brandName,setBrandName]=useState("Kaushlendra Pandey");
 
 
 
+
+
+
     return(
+        
         <>
+             {isOpen && (
+  <div className="md:hidden bg-gray-100 px-6 py-4 space-y-4">
+    <Link to="/#about" onClick={() => setIsOpen(false)}>About</Link>
+    <Link to="/#skills" onClick={() => setIsOpen(false)}>Skills</Link>
+    <Link to="/#technologies" onClick={() => setIsOpen(false)}>Technologies</Link>
+    <Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link>
+  </div>
+)}
+
         <div className="h-20 border main md:flex justify-between items-center px-16 bg-gray-100">
             
             <div className="text-2xl font-bold">
