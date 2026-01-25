@@ -30,11 +30,11 @@ const [brandName,setBrandName]=useState("Kaushlendra Pandey");
     }
 ]);
 
-const scrollToSection =(id)=>{
- document.getElementById(id)?.scrollIntoView({
-    behavior: "smooth",
- });
-};
+// const scrollToSection =(id)=>{
+//  document.getElementById(id)?.scrollIntoView({
+//     behavior: "smooth",
+//  });
+// };
 
 
 
@@ -58,9 +58,12 @@ const scrollToSection =(id)=>{
 
             
                  <a href="/" className="hover:text-orange-600">Home</a>
-                 <a onClick={()=>{scrollToSection("about")}} className="hover:text-orange-600 cursor-pointer">About</a>
-                  <a onClick={()=>scrollToSection("skills")} className="hover:text-orange-600 cursor-pointer">Skills</a>
-                   <a onClick={()=>{scrollToSection("technologies")}} className="hover:text-orange-600 cursor-pointer">Technologies</a>
+                 {/* <a onClick={()=>{scrollToSection("about")}} About</a> */}
+                 <Link to="/#about" className="hover:text-orange-600 cursor-pointer">About</Link>
+                  {/* <a onClick={()=>scrollToSection("skills")} className="hover:text-orange-600 cursor-pointer">Skills</a> */}
+                  <Link to="/#skills" className="hover:text-orange-600 cursor-pointer">Skills</Link>
+                   {/* <a onClick={()=>{scrollToSection("technologies")}} className="hover:text-orange-600 cursor-pointer">Technologies</a> */}
+                   <Link to="/#technologies" className="hover:text-orange-600 cursor-pointer">Technologies</Link>
                    
                     <Link to="/contact" className="hover:text-orange-600">Contact</Link>
                     

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Contact = () => {
   return (
     <section className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 px-6 py-20 flex items-center justify-center">
@@ -92,6 +94,9 @@ const Contact = () => {
           </button>
         </form>
       </div>
+      
+
+
     </section>
   );
 };

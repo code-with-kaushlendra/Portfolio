@@ -7,11 +7,13 @@ import Services from './components/Services'
 import Expertise from "./components/Expertise";
 import Footer from "./components/Footer"
 import Contact from "./pages/Contact";
+import ScrollToSection from "./components/ScrollToSection";
 
 function App(){
   return(
     <>
     <Header/>
+    <ScrollToSection/>
  <Routes>
   <Route path="/" element={
     <>
