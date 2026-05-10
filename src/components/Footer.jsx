@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="bg-gray-100 border">
@@ -22,10 +23,10 @@ const Footer = () => {
           gap-4
           text-sm
         ">
-          <a href="/about" className="hover:underline">About</a>
-          <a href="/privacy" className="hover:underline">Privacy Policy</a>
-          <a href="/licency" className="hover:underline">Licensing</a>
-          <a href="/contact" className="hover:underline">Contact</a>
+          <Link to="/#about" className="hover:underline">About</Link>
+          <Link to="/" className="hover:underline">Privacy Policy</Link>
+          <Link to="/" className="hover:underline">Licensing</Link>
+          <Link to="/contact" className="hover:underline">Contact</Link>
         </div>
 
       </div>
