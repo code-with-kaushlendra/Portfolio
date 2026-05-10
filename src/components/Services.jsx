@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 const Services = () => {
   return (
     <section className="py-16">
@@ -15,9 +17,11 @@ const Services = () => {
             I build responsive and user-friendly websites using HTML, CSS,
             JavaScript, and modern UI practices.
           </p>
-          <button className="px-4 py-2 bg-orange-500 rounded-full text-sm hover:bg-blue-100">
-            Check
-          </button>
+          <Link to="/portfolio?filter=web">
+            <button className="px-4 py-2 bg-orange-500 rounded-full text-sm hover:bg-blue-100">
+              Check
+            </button>
+          </Link>
         </div>
 
         {/* Java Developer */}
@@ -28,9 +32,11 @@ const Services = () => {
             Experienced in building backend applications using Core Java,
             OOP concepts, JSP, Servlets, and MySQL.
           </p>
-          <button className="px-4 py-2 bg-orange-500 rounded-full text-sm hover:bg-blue-100">
-            Check
-          </button>
+          <Link to="/portfolio?filter=java">
+            <button className="px-4 py-2 bg-orange-500 rounded-full text-sm hover:bg-blue-100">
+              Check
+            </button>
+          </Link>
         </div>
 
         {/* React Developer */}
@@ -41,9 +47,11 @@ const Services = () => {
             I create modern single-page applications using React,
             reusable components, and hooks.
           </p>
-          <button className="px-4 py-2 bg-orange-500 rounded-full text-sm hover:bg-blue-100">
-            Check
-          </button>
+          <Link to="/portfolio?filter=react">
+            <button className="px-4 py-2 bg-orange-500 rounded-full text-sm hover:bg-blue-100">
+              Check
+            </button>
+          </Link>
         </div>
 
       </div>

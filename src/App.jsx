@@ -8,6 +8,7 @@ import Expertise from "./components/Expertise";
 import Footer from "./components/Footer"
 import Contact from "./pages/Contact";
 import ScrollToSection from "./components/ScrollToSection";
+import Projects from './pages/Projects'
 
 function App(){
   return(
@@ -36,6 +37,7 @@ function App(){
 />
 
  <Route path="/contact" element={<Contact/>} />
+  <Route path="/portfolio" element={<Projects/>} />
      
  </Routes>
 
