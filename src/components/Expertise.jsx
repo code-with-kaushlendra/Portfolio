@@ -13,8 +13,7 @@ const Expertise = () => {
         <div
           style={{
             backgroundImage: `url(${bannerBackground})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
+            backgroundSize: "cover"
           }}
           className="main-dabba flex flex-col md:flex-row py-16 gap-12"
         >

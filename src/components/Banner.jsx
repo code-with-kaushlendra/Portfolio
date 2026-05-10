@@ -27,7 +27,7 @@ const Banner = () => {
 
   return (
     <section
-      className="min-h-screen bg-cover bg-center"
+      className=" bg-cover"
       style={{ backgroundImage: `url(${bannerBackground})` }}
     >
       <div className="max-w-7xl mx-auto px-6 py-16 flex flex-col-reverse md:flex-row items-center gap-12 text-white">
@@ -47,7 +47,7 @@ const Banner = () => {
             <span className="font-bold underline" ref={el}></span>
           </h2>
 
-          <p className="mt-4 text-sm md:text-base leading-relaxed">
+          <p id="hero" className="mt-4 text-sm md:text-base leading-relaxed ">
             A motivated developer with a strong foundation in Java and modern
             front-end technologies. I enjoy building responsive web
             applications and turning ideas into practical, user-friendly
