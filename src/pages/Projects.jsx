@@ -5,6 +5,7 @@ import { image } from 'framer-motion/client'
 import img1 from '../assets/portfolio.png'
 import img2 from '../assets/divine.png'
 import img3 from '../assets/warranty.png'
+import img4 from '../assets/ai.png'
 
 
 const Projects = () => {
@@ -43,6 +44,17 @@ const Projects = () => {
             image: img3,
             tags: ['react'],
             link: 'https://www.warrantyvault.in'
+        },
+        {
+            id: 4,
+            title: 'AI Article Generator',
+            short: 'AI-powered content generation platform.',
+            description:
+                'Built an AI article generation application using React and AI APIs. Features include content generation, prompt handling, responsive UI, and real-time article creation.',
+            tech: ['React', 'OpenAI API', 'JavaScript', 'Tailwind CSS'],
+            image: img4,
+            tags: ['n8cloudn', 'ChatGPT', 'AI', 'web'],
+            link: 'https://dancing-dolphin-c88390.netlify.app/'
         }
     ]
 
